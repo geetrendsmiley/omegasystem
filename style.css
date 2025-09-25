@@ -323,7 +323,6 @@ body {
 .zn_logos {
   display: flex;
   gap: 18px;
-  flex-wrap: wrap;
 }
 .zn_logo {
   background: var(--glass);
