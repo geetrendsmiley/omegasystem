@@ -109,9 +109,32 @@ const $$ = (sel) => Array.from(document.querySelectorAll(sel));
       }
       // pretend to send
       closeModal();
-      alert(
-        "Registration received. We will contact you to complete the ₦1,000 deposit."
-      );
+      const payload = {};
+      for (const [k, v] of data.entries()) payload[k] = v;
+
+      fetch("https://formspree.io/f/mwprqkkk", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      })
+        .then((res) => {
+          if (res.ok) {
+            alert(
+              "Registration received. We will contact you to complete the ₦1,000 deposit."
+            );
+          } else {
+            return res.json().then((body) => {
+              throw new Error(body?.error || "Submission failed");
+            });
+          }
+        })
+        .catch((err) => {
+          console.error("Form submit error:", err);
+          alert("Submission failed. Please try again later.");
+        });
       form.reset();
     });
   }
