@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Omega System</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="omegalogo.png" type="image/x-icon" />
   </head>
   <body>
     <!-- Header (still only header) -->
     <header class="qz_r7h" role="banner" aria-label="Site header">
       <div class="l1x_p9">
         <a class="v9k_logo" href="#">
-          <span class="dot" aria-hidden="true"></span>
+          <span class="dot" aria-hidden="true"
+            ><img
+              src="omegalogo.png"
+              alt="logo"
+              height="40px"
+              width="40px"
+              style="border-radius: 10px"
+          /></span>
           <span class="txt">Omega System</span>
         </a>
 
@@ -19,8 +27,8 @@
           <a href="#services">Services</a>
           <a href="#about">About</a>
           <a href="#courses">Courses</a>
-          <a href="#contact">Contact</a>
-          <a class="btn_zzq" href="#enroll">Get Started</a>
+          <a href="#contact-form">Contact</a>
+          <a class="btn_zzq" href="#courses">Get Started</a>
         </nav>
 
         <div class="mbl_ux" aria-hidden="true">
@@ -66,12 +74,46 @@
         <div class="zn_wrap">
           <h2 class="zn_h">Our Partners</h2>
           <div class="zn_logos" role="list">
-            <div class="zn_logo" role="listitem"><img src="images/ilorin.jpg" alt="Partner 1" height="40" width="40" style="border-radius: 50%;"> <p> Federal Information Center Ilorin Kwara
-</p></div>
-            <div class="zn_logo" role="listitem"><img src="images/enugu.jpg" alt="Partner 2" height="40" width="40" style="border-radius: 50%;"><p> Federal Information Center Enugu
-</p></div>
-            <div class="zn_logo" role="listitem"><img src="images/osogbo.jpg" alt="Partner 3" height="40" width="40" style="border-radius: 50%;"><p>Federal Information Center osogbo </p></div>
-            <div class="zn_logo" role="listitem"><img src="images/ekiti.jpg" alt="Partner 4" height="40" width="40" style="border-radius: 50%;"><p>Federal Information Center Ado Ekiti</p></div>
+            <div class="zn_logo" role="listitem">
+              <img
+                src="images/ilorin.jpg"
+                alt="Partner 1"
+                height="40"
+                width="40"
+                style="border-radius: 50%"
+              />
+              <p>Federal Information Center Ilorin Kwara</p>
+            </div>
+            <div class="zn_logo" role="listitem">
+              <img
+                src="images/enugu.jpg"
+                alt="Partner 2"
+                height="40"
+                width="40"
+                style="border-radius: 50%"
+              />
+              <p>Federal Information Center Enugu</p>
+            </div>
+            <div class="zn_logo" role="listitem">
+              <img
+                src="images/osogbo.jpg"
+                alt="Partner 3"
+                height="40"
+                width="40"
+                style="border-radius: 50%"
+              />
+              <p>Federal Information Center osogbo</p>
+            </div>
+            <div class="zn_logo" role="listitem">
+              <img
+                src="images/ekiti.jpg"
+                alt="Partner 4"
+                height="40"
+                width="40"
+                style="border-radius: 50%"
+              />
+              <p>Federal Information Center Ado Ekiti</p>
+            </div>
           </div>
         </div>
       </section>
@@ -368,13 +410,63 @@
       </div>
     </div>
     <!-- MAIN BODY END -->
+    <div class="contcat-body">
+      <div class="contact-form" id="contact-form">
+        <h2>Contact Us</h2>
+        <form
+          action="https://formspree.io/f/mjkaypbj"
+          method="post"
+          enctype="text/plain"
+        >
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name"
+            required
+          />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your email"
+            required
+          />
+          <label for="subject">Subject</label>
+          <input
+            type="text"
+            id="subject"
+            name="subject"
+            placeholder="Message subject"
+          />
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write your message..."
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
 
     <!-- Footer -->
     <footer class="ftr_x8v" role="contentinfo">
       <div class="ftr_wrap">
         <div class="ftr_logo">
-          <span class="dot"></span>
-          <span class="txt">Omega Systems</span>
+          <!-- logo -->
+          <span class="dot" aria-hidden="true"
+            ><img
+              src="omegalogo.png"
+              alt="logo"
+              height="40px"
+              width="40px"
+              style="border-radius: 10px"
+          /></span>
+          <span class="txt">Omega System</span>
         </div>
 
         <nav class="ftr_nav" aria-label="Footer navigation">
@@ -385,9 +477,15 @@
         </nav>
 
         <div class="ftr_social">
-          <a href="#"><img src="icons/x.svg" alt="X" /></a>
-          <a href="#"><img src="icons/instagram.svg" alt="Instagram" /></a>
-          <a href="#"><img src="icons/facebook.svg" alt="Facebook" /></a>
+          <a href="#"
+            ><img src="icons/x-social-media-black-icon.svg" alt="X"
+          /></a>
+          <a href="#"
+            ><img src="icons/ig-instagram-icon.svg" alt="Instagram"
+          /></a>
+          <a href="#"
+            ><img src="icons/facebook-round-color-icon.svg" alt="Facebook"
+          /></a>
         </div>
       </div>
       <div class="ftr_copy">
